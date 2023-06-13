@@ -10,6 +10,11 @@ const ProductDetails = ({ product, products }) => {
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
 
+  const handleDownload = () => {
+    window.location.href = '/EKADI GUIDELINES.pdf'; // Replace with the actual path to your PDF file
+  };
+
+
   const handleBuyNow = () => {
     onAdd(product, qty);
 
@@ -51,6 +56,16 @@ const ProductDetails = ({ product, products }) => {
           </div>
           <h4>Details: </h4>
           <p>{details}</p>
+  
+          <h4>Download the document and send your details and logo,<br></br>
+          To: info@identisys.net</h4>
+          <button onClick={handleDownload} className="download-button">
+            <span>Download PDF</span>
+            <Link href="/">
+              <img className="logo-side" src="/download.png" alt="nav" />
+            </Link>
+
+          </button> 
           <p className="price">KSH {price}</p>
           <div className="quantity">
             <h3>Quantity:</h3>
