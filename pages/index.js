@@ -2,6 +2,7 @@ import React from 'react';
 
 import { client } from '@/lib/client';
 import { Product, FooterBanner, HeroBanner } from '@/components'
+import Link from 'next/link';
 
 const Home = ({ products, bannerData}) => (
   <div>
@@ -21,8 +22,16 @@ const Home = ({ products, bannerData}) => (
           <h2>Resellers</h2>
           <p>To become an authorized reseller of our esteemed selection of modern cards,
              we kindly request you to <strong><u><a href="https://forms.gle/AmCJTY3TSZdPCaCq8">click here</a></u></strong> and fill the form.</p>
-          </div>
           
+          <br></br>
+          <br></br>
+          
+          <h2>FAQs</h2>
+          <p>For more information click here for <strong><Link href="/faq">
+                <u>FAQ</u>
+              </Link></strong></p>
+              </div>          
+
     <FooterBanner footerBanner={bannerData && bannerData[0]}/>
   </div>
 );
