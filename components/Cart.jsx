@@ -79,9 +79,10 @@ const Cart = () => {
               <h3>KSH {totalPrice}</h3>
             </div>
             <div className="btn-container">
-              <button type="button" className="btn" onClick="">
-                 Proceed to Payment
-              </button>
+            <button type="button" className="btn" onClick={() => window.location.href = 'https://payments.pesapal.com/identisyslimited'}>
+                Proceed to Payment
+            </button>
+
             </div>
           </div>
         )}
