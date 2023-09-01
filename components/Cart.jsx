@@ -35,7 +35,7 @@ const Cart = () => {
                 onClick={() => setShowCart(false)}
                 className="btn"
               >
-                Continue Shopping
+                Continue Shopping 
               </button>
             </Link>
           </div>
@@ -79,7 +79,7 @@ const Cart = () => {
               <h3>KSH {totalPrice}</h3>
             </div>
             <div className="btn-container">
-            <button type="button" className="btn" onClick={() => window.location.href = 'https://payments.pesapal.com/identisyslimited'}>
+            <button type="button" className="btn" onClick={() => window.location.href = 'https://payments.pesapal.com/identisyslimited' }>
                 Proceed to Payment
             </button>
 
