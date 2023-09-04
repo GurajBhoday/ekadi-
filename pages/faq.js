@@ -70,6 +70,14 @@ const FAQ = () => {
         question="Don't have an NFC Device?"
         answer="Not to worry! If you do not have an NFC Device there is a QR code at the back of the card which can be scanned and used to save the information"
       />
+      <FaqItem
+        question="How long does it take for a card to be delivered?"
+        answer="Delivery time is 24 Hours of approved artwork."
+      />
+       <FaqItem
+        question="How do we protect your data?"
+        answer="We have implement robust security measures and follow industry best practices as per the new data protection act to ensure your information is safe. "
+      />
 
 </div>
   );
