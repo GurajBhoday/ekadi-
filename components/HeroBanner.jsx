@@ -20,6 +20,7 @@ const HeroBanner = ({ heroBanner }) => {
             <h5>Description</h5>
             <p>{heroBanner.desc}</p>
           </div>
+          
         </div>
       </div>
     </div>

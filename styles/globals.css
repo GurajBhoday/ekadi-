@@ -193,10 +193,11 @@ width: 100%;
 .hero-banner-image{
   position: absolute;
   top: 0%;
-  right:20%;
+  right:15%;
   width: 450px;
   height: 450px;
 }
+
 
 
 .desc{
@@ -717,10 +718,10 @@ margin-top: 160px;
     margin-top: 80px;
   }
   .footer-banner-image{
-    width: 77%;
-    left: 30%;
+    width: 60%;
+    left: 20%;
     top: 6%;
-    height: 56%
+    height: 40%
   }
   .banner-desc .left h3{
     font-weight: 900;
