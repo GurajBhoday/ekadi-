@@ -52,7 +52,7 @@ const ProductDetails = ({ product, products }) => {
               <AiOutlineStar />
             </div>
             <p>
-              (20)
+              (22)
             </p>
           </div>
           <h4>Details: </h4>
@@ -68,6 +68,7 @@ const ProductDetails = ({ product, products }) => {
 
           </button> 
           <p className="price">KSH {price}</p>
+          <h4> *Prices are inclusive of 16% VAT*</h4>
           <div className="quantity">
             <h3>Quantity:</h3>
             <p className="quantity-desc">

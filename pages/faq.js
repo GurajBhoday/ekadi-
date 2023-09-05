@@ -76,7 +76,7 @@ const FAQ = () => {
       />
        <FaqItem
         question="How do we protect your data?"
-        answer="We have implement robust security measures and follow industry best practices as per the new data protection act to ensure your information is safe. "
+        answer="We have implement robust security and encrytion measures and follow industry best practices as per the new data protection act to ensure your information is safe. "
       />
 
 </div>
