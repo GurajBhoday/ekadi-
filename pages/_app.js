@@ -4,7 +4,7 @@ import { Toaster } from 'react-hot-toast';
 
 import { Layout } from '@/components';
 import { StateContext } from '@/context/StateContext';
-
+import { Analytics } from '@vercel/analytics/react';
 
 
  function App({ Component, pageProps }) {
@@ -13,6 +13,7 @@ import { StateContext } from '@/context/StateContext';
     <Layout>
       <Toaster />
         <Component {...pageProps} />
+        <Analytics />
     </Layout>
   </StateContext>
   )

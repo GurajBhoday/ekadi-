@@ -16,7 +16,9 @@ const FooterBanner = ({ footerBanner: { largeText1, largeText2, smallText, midTe
         <div className="right">
           <p>{smallText}</p>
           <h3>{midText}</h3>
+          <div className='right2'>
           <p>{desc}</p>
+          </div>
           <Link href={`/product/${product}`}>
             <button type="button">{buttonText}</button>
           </Link>

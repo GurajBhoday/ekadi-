@@ -28,6 +28,11 @@ export default {
             type: 'string',
         },
         {
+            name: 'desc2',
+            title: 'Decs2',
+            type: 'string',
+        },
+        {
             name: 'smallText',
             title: 'SmallText',
             type: 'string',
@@ -55,11 +60,6 @@ export default {
         {
             name: 'discount',
             title: 'Discount',
-            type: 'string',
-        },
-        {
-            name: 'saleTime',
-            title: 'SaleTime',
             type: 'string',
         },
     ],
