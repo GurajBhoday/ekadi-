@@ -58,7 +58,7 @@ const ProductDetails = ({ product, products }) => {
           <h4>Details: </h4>
           <p>{details}</p>
   
-          <h4>Download the document and send your details and logo,<br></br>
+          <h4>Download the document and send your details and high res logo,<br></br>
           To: info@identisys.net</h4>
           <button onClick={handleDownload} className="download-button">
             <span>Download PDF</span>
@@ -67,7 +67,7 @@ const ProductDetails = ({ product, products }) => {
             </Link>
 
           </button> 
-          <p className="price">KSH {price}</p>
+          <p className="price">KSH. {price}</p>
           <h4> *Prices are inclusive of 16% VAT*</h4>
           <div className="quantity">
             <h3>Quantity:</h3>
