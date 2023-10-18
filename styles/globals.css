@@ -753,11 +753,6 @@ margin-top: 160px;
 .faq-answer-list li {
   margin-bottom: 10px;
 }
-
-
-
-
-
 @media screen and (max-width:800px) {
   .hero-banner-container{
     height: 720px;

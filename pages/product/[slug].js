@@ -6,10 +6,13 @@ import { Product } from '../../components';
 import { useStateContext } from '../../context/StateContext';
 import Link from 'next/link';
 
+
 const ProductDetails = ({ product, products }) => {
   const { image, name, details, price } = product;
   const [index, setIndex] = useState(0);
   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext();
+
+  const [add200, setAdd200] = useState(false);
 
   const handleDownload = () => {
     window.location.href = '/EKADI GUIDELINES.pdf'; // Replace with the actual path to your PDF file
@@ -17,7 +20,8 @@ const ProductDetails = ({ product, products }) => {
 
 
   const handleBuyNow = () => {
-    onAdd(product, qty);
+    const updatePrice = add200 ? price + 200 : price;
+    onAdd({...product, price: updatePrice }, qty);
 
     setShowCart(true);
   }
@@ -68,6 +72,19 @@ const ProductDetails = ({ product, products }) => {
 
           </button> 
           <p className="price">KSH. {price}</p>
+
+          <div className="checkbox-wrapper-1">
+           <label>
+              <input
+               type="checkbox"
+             checked={add200}
+              onChange={() => setAdd200(!add200)}
+     />
+     <span><b>Lamination for PET Card ONLY (KSH.200)</b></span>
+   </label>
+ </div>
+
+
           <h4> *Prices are inclusive of 16% VAT*</h4>
           <div className="quantity">
             <h3>Quantity:</h3>
@@ -134,4 +151,4 @@ export const getStaticProps = async ({ params: { slug }}) => {
   }
 }
 
-export default ProductDetails
+export default ProductDetails;
